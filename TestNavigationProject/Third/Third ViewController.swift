@@ -1,13 +1,13 @@
 //
-//  First ViewController.swift
+//  Third ViewController.swift
 //  TestNavigationProject
 //
-//  Created by Борис Киселев on 23.05.2022.
+//  Created by Борис Киселев on 24.05.2022.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class THirdViewController: UIViewController {
     
   //MARK: - Views
     
@@ -21,8 +21,13 @@ class FirstViewController: UIViewController {
   //MARK: - Actions
     
     @objc private func tapButtonAction() {
-        navigationController?.pushViewController(FirstChildViewController(), animated: true)
-        //navigationController?.tabBarController?.tabBar.isHidden = true
+        let navigationController = UINavigationController(rootViewController: ThirdChildViewController())
+        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController.navigationBar.shadowImage = UIImage()
+        navigationController.navigationBar.isTranslucent = true
+        navigationController.view.backgroundColor = .clear
+        
+        present(navigationController, animated: true, completion: nil)
     }
     
     
@@ -30,7 +35,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemRed
+        view.backgroundColor = .systemYellow
     }
     
     // MARK: - initial
@@ -57,3 +62,4 @@ class FirstViewController: UIViewController {
         button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 }
+

@@ -1,39 +1,38 @@
 //
-//  First ViewController.swift
+//  Second Child ViewController.swift
 //  TestNavigationProject
 //
-//  Created by Борис Киселев on 23.05.2022.
+//  Created by Борис Киселев on 24.05.2022.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController {
-    
-  //MARK: - Views
+class SecondChildViewController: UIViewController {
     
     private lazy var button: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Press Me", for: .normal)
+        button.setTitle("Dimiss Me", for: .normal)
         button.addTarget(self, action: #selector(tapButtonAction), for: .touchUpInside)
         return button
     }()
     
-  //MARK: - Actions
-    
     @objc private func tapButtonAction() {
-        navigationController?.pushViewController(FirstChildViewController(), animated: true)
-        //navigationController?.tabBarController?.tabBar.isHidden = true
+        dismiss(animated: true, completion: nil)
     }
+    
     
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemRed
+        view.backgroundColor = .systemIndigo
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
+        title = "Second Child"
+        
     }
     
-    // MARK: - initial
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         
@@ -57,3 +56,14 @@ class FirstViewController: UIViewController {
         button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 }
+    // MARK: - initial
+//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    //        super.init(nibName: nil, bundle: nil)
+    //
+    //    }
+    //
+    //    required init?(coder: NSCoder) {
+    //        super.init(coder: coder)
+    //    }
+    
+    

@@ -21,12 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let firstNavigationController = UINavigationController(rootViewController: firstViewController)
         firstViewController.tabBarItem = UITabBarItem(title: "First", image: .checkmark, tag: 0)
         
-        let secondViewController = UIViewController()
-        let secondNavigationController = UINavigationController(rootViewController: secondViewController)
-        secondViewController.view.backgroundColor = .systemGreen
+        let secondViewController = SecondViewController()
         secondViewController.tabBarItem = UITabBarItem(title: "Second", image: .remove, tag: 1)
         
-        let thirdViewController = UIViewController()
+        let thirdViewController = THirdViewController()
         thirdViewController.view.backgroundColor = .systemYellow
         thirdViewController.tabBarItem = UITabBarItem(title: "Third", image: .add, tag: 2)
         
@@ -46,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         tabBarController.setViewControllers([
             firstNavigationController,
-            secondNavigationController,
+            secondViewController,
             thirdViewController,
             fourViewController,
             fiveViewController

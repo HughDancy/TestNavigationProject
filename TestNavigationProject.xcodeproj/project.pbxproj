@@ -15,6 +15,9 @@
 		D8C8C5F4283BD66700459633 /* First ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8C5F3283BD66700459633 /* First ViewController.swift */; };
 		D8C8C5F7283BD68200459633 /* Second ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8C5F6283BD68200459633 /* Second ViewController.swift */; };
 		D8C8C5F9283BE0C200459633 /* First Child ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8C5F8283BE0C200459633 /* First Child ViewController.swift */; };
+		D8C8C5FB283C972900459633 /* Second Child ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8C5FA283C972900459633 /* Second Child ViewController.swift */; };
+		D8C8C5FE283C983200459633 /* Third ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8C5FD283C983200459633 /* Third ViewController.swift */; };
+		D8C8C600283C984A00459633 /* Third Child ViewCOntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8C5FF283C984A00459633 /* Third Child ViewCOntroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		D8C8C5F3283BD66700459633 /* First ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "First ViewController.swift"; sourceTree = "<group>"; };
 		D8C8C5F6283BD68200459633 /* Second ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Second ViewController.swift"; sourceTree = "<group>"; };
 		D8C8C5F8283BE0C200459633 /* First Child ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "First Child ViewController.swift"; sourceTree = "<group>"; };
+		D8C8C5FA283C972900459633 /* Second Child ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Second Child ViewController.swift"; sourceTree = "<group>"; };
+		D8C8C5FD283C983200459633 /* Third ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Third ViewController.swift"; sourceTree = "<group>"; };
+		D8C8C5FF283C984A00459633 /* Third Child ViewCOntroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Third Child ViewCOntroller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			children = (
 				D8C8C5F2283BD63B00459633 /* First ViewController */,
 				D8C8C5F5283BD66E00459633 /* Second  */,
+				D8C8C5FC283C980400459633 /* Third */,
 				D8C8C5DE283BC90700459633 /* AppDelegate.swift */,
 				D8C8C5E2283BC90700459633 /* ViewController.swift */,
 				D8C8C5E4283BC90700459633 /* Main.storyboard */,
@@ -85,8 +92,18 @@
 			isa = PBXGroup;
 			children = (
 				D8C8C5F6283BD68200459633 /* Second ViewController.swift */,
+				D8C8C5FA283C972900459633 /* Second Child ViewController.swift */,
 			);
 			path = "Second ";
+			sourceTree = "<group>";
+		};
+		D8C8C5FC283C980400459633 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8C5FD283C983200459633 /* Third ViewController.swift */,
+				D8C8C5FF283C984A00459633 /* Third Child ViewCOntroller.swift */,
+			);
+			path = Third;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C8C5FE283C983200459633 /* Third ViewController.swift in Sources */,
 				D8C8C5F9283BE0C200459633 /* First Child ViewController.swift in Sources */,
+				D8C8C600283C984A00459633 /* Third Child ViewCOntroller.swift in Sources */,
 				D8C8C5F4283BD66700459633 /* First ViewController.swift in Sources */,
 				D8C8C5F7283BD68200459633 /* Second ViewController.swift in Sources */,
 				D8C8C5E3283BC90700459633 /* ViewController.swift in Sources */,
 				D8C8C5DF283BC90700459633 /* AppDelegate.swift in Sources */,
+				D8C8C5FB283C972900459633 /* Second Child ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
